@@ -12,11 +12,11 @@ document.querySelectorAll('#catImg, #catBox').forEach(element => {
 });
 
 originalCatImg.addEventListener('click', function() {
-  window.location.href = 'pages/CAT/CAT_ORIGINAL/';
+  window.location.href = 'PAGES/CAT/CAT_ORIGINAL';
 });
 
 newCatImg.addEventListener('click', function() {
-  window.location.href = 'pages/CAT/CAT_AI/';
+  window.location.href = 'PAGES/CAT/CAT_ORIGINAL';
 });
 
 window.addEventListener('click', function(event) {
