@@ -1,0 +1,120 @@
+@font-face {
+    font-family: dosvga;
+    src: url(qbjs.woff2);
+}
+
+body { 
+    background-color: #000; 
+    font-family: dosvga, Arial, Helvetica, sans-serif;
+    color: #999;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gx-container {
+    text-align: center; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gx-footer {
+    margin: 0 auto;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    max-width: 90%;
+    padding: 5px;
+}
+
+#gx-link, #gx-fullscreen { 
+    margin: 5px;
+}
+
+#gx-fullscreen {
+    cursor: pointer;
+    background-image: url('fullscreen.svg');
+    width: 26px;
+    height: 26px;
+    background-size: 26px 26px;
+}
+
+#gx-fullscreen:hover {
+    background-image: url('fullscreen-hover.svg');
+}
+
+#gx-canvas {
+    border: 1px solid #222;
+    background-color: #000;
+    max-width: 100%;
+    height: auto;
+}
+
+#gx-load-screen {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: #ccc;
+    border: 1px solid #000;
+    text-decoration: none;
+    background-position: center center;
+    background-image: url('play.png');
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+#gx-load-screen:hover {
+    background-color: #333;
+}
+
+
+@media (max-width: 1024px) {
+    #gx-footer {
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    #gx-footer {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #gx-fullscreen {
+        width: 22px;
+        height: 22px;
+        background-size: 22px 22px;
+    }
+    #gx-load-screen {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #gx-footer {
+        width: 100%;
+        padding: 10px;
+    }
+    #gx-fullscreen {
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+    }
+    #gx-load-screen {
+        font-size: 18px;
+    }
+}
