@@ -3,8 +3,8 @@
     src: url(qbjs.woff2);
 }
 
-body { 
-    background-color: #000; 
+body {
+    background-color: #000;
     font-family: dosvga, Arial, Helvetica, sans-serif;
     color: #999;
     margin: 0;
@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 #gx-container {
