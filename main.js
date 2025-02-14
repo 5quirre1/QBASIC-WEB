@@ -16,7 +16,7 @@ originalCatImg.addEventListener('click', function() {
 });
 
 newCatImg.addEventListener('click', function() {
-  window.location.href = 'PAGES/CAT/CAT_ORIGINAL';
+  window.location.href = 'PAGES/CAT/CAT_AI';
 });
 
 window.addEventListener('click', function(event) {
